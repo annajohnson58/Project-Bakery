@@ -1,0 +1,70 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9 ; /* Dark background for contrast */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-section-one {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limit the width */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo-container {
+    flex: 1;
+  }
+  
+  .footer-logo {
+    height: 50px; /* Set a fixed height for the logo */
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+  }
+  
+  .footer-icons a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .footer-icons a:hover {
+    color: #ff6f61; /* Change color on hover */
+  }
+  
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px; /* Spacing between columns */
+  }
+  
+  .footer-section-columns span {
+    cursor: pointer; /* Indicate that these are clickable */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .footer-section-columns span:hover {
+    color: #ff6f61; /* Change color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .footer-wrapper {
+      flex-direction: row; /* Arrange footer items in a row on larger screens */
+      justify-content: space-between;
+    }
+  
+    .footer-section-columns {
+      flex: 1; /* Equal width for each column */
+      align-items: center; /* Center items in each column */
+    }
+  }
